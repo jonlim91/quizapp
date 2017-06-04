@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity"> <!-- Prevents EditText field from focusing on start -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="192dp"
+            android:layout_height="96dp"
+            android:src="@drawable/overwatch_logo"
+            android:layout_gravity="center"
+            android:layout_weight="0.52">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/question_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.  What year was Overwatch released?"
+                android:layout_marginBottom="4dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <RadioGroup
+                android:id="@+id/question_1_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/question_one_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A.  2014" />
+
+                <RadioButton
+                    android:id="@+id/question_one_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B.  2015" />
+
+                <RadioButton
+                    android:id="@+id/question_one_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C.  2016" />
+
+                <RadioButton
+                    android:id="@+id/question_one_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D.  2017" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/question_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.  Which of the following are support heroes?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginBottom="4dp"/>
+
+            <CheckBox
+                android:id="@+id/question_two_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A.  Mercy"/>
+
+            <CheckBox
+                android:id="@+id/question_two_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B.  Zarya"/>
+
+            <CheckBox
+                android:id="@+id/question_two_C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C.  Lucio"/>
+
+            <CheckBox
+                android:id="@+id/question_two_D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D.  Tracer"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/question_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.  As of 2017, who is the Game Director for Overwatch?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <EditText
+                android:id="@+id/question_3_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter answer here"
+                android:inputType="textCapWords"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/question_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.  Which of the following is an Assault map?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_marginBottom="4dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question_4_radiogroup">
+
+                <RadioButton
+                    android:id="@+id/question_four_A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="A.  Oasis" />
+
+                <RadioButton
+                    android:id="@+id/question_four_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="B.  Hanamura" />
+
+                <RadioButton
+                    android:id="@+id/question_four_C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="C.  Dorado" />
+
+                <RadioButton
+                    android:id="@+id/question_four_D"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="D.  Eichenwalde" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/question_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.  Who was the first post-launch character added to the game?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginBottom="4dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_5_radiogroup">
+            <RadioButton
+                android:id="@+id/question_five_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="A.  Ana" />
+
+            <RadioButton
+                android:id="@+id/question_five_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="B.  D.va" />
+
+            <RadioButton
+                android:id="@+id/question_five_C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="C.  Orisa" />
+
+            <RadioButton
+                android:id="@+id/question_five_D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="D.  Sombra" />
+        </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit answers"
+            android:layout_marginLeft="8dp"
+            android:onClick="submitAnswers"/>
+    </LinearLayout>
+</ScrollView>
